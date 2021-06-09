@@ -1,0 +1,1 @@
+this is a README to discribe what every script represents but i will do that later.
