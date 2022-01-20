@@ -3,5 +3,5 @@
 sudo apt-get install apache2 -y
 sudo apt-get install lamp-server^
 echo " Hello Holberton " > /var/www/html/index.html
-sudo service apache2 start
+sudo service apache2 restart
 
