@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 # Fix the bug in apache 2
+<<<<<<< HEAD
 sudo apt-get install apache2 -y
 sudo apt-get install lamp-server^
 echo " Hello Holberton " > /var/www/html/index.html
 sudo service apache2 restart
 
+=======
+sudo service apache2 start
+>>>>>>> b8654d89bd5c41b4d12165fdc74d06345661461d
