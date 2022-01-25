@@ -6,7 +6,9 @@
 # +You can’t use systemctl for restarting nginx
 sudo apt-get -y update
 sudo apt-get install -y nginx
-sudo chmod -R 755 /var/www
+
+mkdir /etc/nginx/html
+touch /etc/nginx/html/index.nginx-debian.html
 echo "Hello World!" > /var/www/html/index.nginx-debian.html
 printf %s "server {
     listen	80 default_server;
@@ -15,4 +17,6 @@ printf %s "server {
     index	index index.html index.htm index.nginx-debian.html;
 }
 " > /etc/nginx/sites-available/default
+
 sudo service nginx restart
+
