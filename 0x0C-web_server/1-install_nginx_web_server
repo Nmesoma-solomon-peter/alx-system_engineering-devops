@@ -8,7 +8,7 @@ sudo apt-get install -y nginx
 
 sudo mkdir /var/www/html
 chmod -R 755 /var/www
-echo "Hello World!" > /var/www/html/index.nginx-debian.html
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
 
 sudo service nginx restart
 
