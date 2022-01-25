@@ -6,7 +6,6 @@
 # +You can’t use systemctl for restarting nginx
 sudo apt-get -y update
 sudo apt-get install -y nginx
-sudo chown -R $USER:$USER /var/www/html
 sudo chmod -R 755 /var/www
 sudo echo "Hello World!" > /var/www/html/index.nginx-debian.html
 sudo printf %s "server {
